@@ -62,6 +62,7 @@ section:nth-child(even){
 .btn:hover{
     background: var(--green);
     letter-spacing: .1rem;
+
 }
 
 header{
@@ -176,26 +177,27 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
-.producstOnCart {
-    -ms-overflow-style: none; 
+.productsOnCart {
+    position: fixed;
+    text-align: center;
+    border-radius: 20px;
+    -ms-overflow-style: none;
     scrollbar-width: none;
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
     overscroll-behavior: contain;
-    background-color: #202020;
-    width: 300px;
+    background-color:white;
+    color: #242424;
+    width: 350px;
     height: 500px;
-    color: #f0f0f0;
-    z-index: 15;
-    position: fixed;
-    top: 20px;
-    right: 0;
-    text-align: center;
+    z-index: 1000;
+    top: 53px;
+    right: 299px;
     animation: fade 1s;
 }
 
-.producstOnCart::-webkit-scrollbar {
+.productsOnCart::-webkit-scrollbar {
     display: none;
 }
 
@@ -208,7 +210,7 @@ header .icons #menu-bars{
     }
 }
 
-.producstOnCart::-webkit-scrollbar {
+.productsOnCart::-webkit-scrollbar {
     width: 0;
     background: transparent;
 }
@@ -218,7 +220,7 @@ header .icons #menu-bars{
     visibility: none;
 }
 
-.producstOnCart ul {
+.productsOnCart ul {
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -226,20 +228,20 @@ header .icons #menu-bars{
     align-items: center;
 }
 
-.producstOnCart .buyItem {
+.productsOnCart .buyItem {
     border-bottom: #aaa 1px solid;
     width: 90%;
     padding: 10px 0;
     display: flex;
 }
 
-.producstOnCart img {
+.productsOnCart img {
     width: 90px;
 }
 
-.producstOnCart .top {
+.productsOnCart .top {
     display: flex;
-    background-color: #616161;
+    background-color: #61616133;
     text-align: center;
     padding: 10px 0;
     position: sticky;
@@ -260,6 +262,11 @@ header .icons #menu-bars{
     color: #e40505;
 }
 
+.box:hover {
+    display: flex;
+    flex-direction: column;
+}
+
 .top h3 {
     position: absolute;
     left: 50%;
@@ -268,7 +275,7 @@ header .icons #menu-bars{
     margin: 0 auto;
 }
 
-.producstOnCart > .checkout {
+.productsOnCart > .checkout {
     font-size: 0.9rem;
     margin: 20px auto;
     border: none;
@@ -287,8 +294,8 @@ header .icons #menu-bars{
     top: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.5);
+    z-index: -100;
+  
 }
 
 .stopScrolling {
@@ -318,7 +325,7 @@ header .icons #menu-bars{
     padding: 0 20px;
 }
 
-.producstOnCart .empty {
+.productsOnCart .empty {
     justify-self: center;
     margin: 150px auto;
 }

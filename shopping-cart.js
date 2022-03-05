@@ -55,7 +55,7 @@ function updateProductsOnCart(box) { // 2
 	productsOnCart.push(box);
 }
 
-box-container.forEach(item => {   // 1
+productsOnCart.forEach(item => {   // 1
 	item.addEventListener('click', (e) => {
 		if (e.target.classList.contains('addToCart')) {
 			const productID = e.target.dataset.boxId;

@@ -54,15 +54,35 @@ var swiper = new Swiper(".review-slider", {
 });
 
 
-function closeCart() {
-	const cart = document.querySelector('.producstOnCart');
-	cart.classList.toggle('hide');
-	document.querySelector('body').classList.toggle('stopScrolling')
-}
-const closeShopCart = document.querySelector('#closeButton');
-const overlay = document.querySelector('.overlay');
-closeShopCart.addEventListener('click', closeCart);
-overlay.addEventListener('click', closeCart);
+document.getElementById('cartButton').addEventListener('click' , function(){
+
+  if(document.getElementById('hide').style.display == 'none'){
+    document.getElementById('hide').style.display = 'block';
+  } else if (document.getElementById('hide').style.display == 'block'){
+    document.getElementById('hide').style.display = 'none';
+  }
+});
+
+document.getElementById('heartButton').addEventListener('click' , function(){
+
+  if(document.getElementById('hide').style.display == 'none'){
+    document.getElementById('hide').style.display = 'block';
+  } else if (document.getElementById('hide').style.display == 'block'){
+    document.getElementById('hide').style.display = 'none';
+  }
+});
+
+// function closeCart() {
+//   document.getElementById("hide").style.visibility = "none";
+//   document.getElementById("hide").style.display = "none";
+// }
+
+// function openCart() {
+//   document.getElementById("hide").style.visibility = "visible";
+//   document.getElementById("hide").style.display = "";
+// }
+
+
 
 function loader(){
   document.querySelector('.loader-container').classList.add('fade-out');
@@ -75,3 +95,6 @@ function fadeOut(){
 window.onload = fadeOut;
 
 
+function openCart(){
+
+}
