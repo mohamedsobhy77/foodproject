@@ -65,10 +65,10 @@ document.getElementById('cartButton').addEventListener('click' , function(){
 
 document.getElementById('heartButton').addEventListener('click' , function(){
 
-  if(document.getElementById('hide').style.display == 'none'){
-    document.getElementById('hide').style.display = 'block';
-  } else if (document.getElementById('hide').style.display == 'block'){
-    document.getElementById('hide').style.display = 'none';
+  if(document.getElementById('hide2').style.display == 'none'){
+    document.getElementById('hide2').style.display = 'block';
+  } else if (document.getElementById('hide2').style.display == 'block'){
+    document.getElementById('hide2').style.display = 'none';
   }
 });
 
@@ -98,3 +98,29 @@ window.onload = fadeOut;
 function openCart(){
 
 }
+
+let btn = document.querySelectorAll(".clk");
+
+btn[0].addEventListener("click",()=>{
+  let img = btn[0].parentElement.firstElementChild.nextElementSibling;
+  let price = btn[0].previousElementSibling;
+  let food_name = btn[0].parentElement.firstElementChild.nextElementSibling.nextElementSibling;
+  
+  let item = document.createElement("li").innerHTML=img+food_name+price;
+  let cart = document.getElementById("buyItems").appendChild(item)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,10 +10,12 @@
 
 *{
     font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none;
+    border:none;
     text-transform: capitalize;
     transition: all .2s linear;
 }
@@ -285,6 +287,7 @@ header .icons #menu-bars{
     cursor: pointer;
 }
 
+
 .overlay {
     overflow: hidden;
     display: inline-block;
@@ -324,6 +327,29 @@ header .icons #menu-bars{
 .buyItem > div {
     padding: 0 20px;
 }
+
+.plus-minus-input {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .plus-minus-input .input-group-field {
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .plus-minus-input .input-group-field::-webkit-inner-spin-button,
+  .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+            appearance: none;
+  }
+  
+  .plus-minus-input .input-group-button .circle {
+    
+    padding: 0.25em 0.8em;
+  }
 
 .productsOnCart .empty {
     justify-self: center;

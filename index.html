@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Food Website</title>
+    <title> RESTO</title>
+    <link rel="icon" href="images/R.png" >
+
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -23,7 +25,7 @@
 
 <header>
 
-    <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>RESTO</a>
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
@@ -62,13 +64,48 @@
         
         <h3>Cart</h3>
     </div>
-    <ul id="buyItems">
-        <select name="cart-items" id="cart-items">
-            <span id="empty" style="display:none;">Your cart is empty</span>
-        </select>
-        </div>
+        <ul id="buyItems">
+           
+               
+                <li>
+                    <img class="box-img" src="images/dish-1.png" alt="">
+                     <h3 class="box-name">tasty food</h3>
+                     <span class="price">$15.99</span>  
+                 
+
+                <div>
+                    <div class="input-group plus-minus-input">
+                        <div class="input-group-button">
+                          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <input class="input-group-field" type="number" name="quantity" value="0">
+                        <div class="input-group-button">
+                          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                          </button>
+                   
+                </div>
+            </li>
+
+                <button class="btn checkout hidden">Check out</button>
+           
+        </ul>
+    </div>
 
         <!-- cart section end -->
+
+        <!-- favourite list srart-->
+
+        <div class="productsOnCart" id="hide2" style="display: none;">
+    
+            <div class="top">
+                
+                <h3>Favorite list</h3>
+            </div>
+                </div>
+                <!-- favourite list end-->
 
 <!-- home section starts  -->
 
@@ -138,7 +175,7 @@
             <a href="#" class="fas fa-heart"></a>
             
             <img class="box-img" src="images/dish-1.png" alt="">
-            <h3 class="box-name">tasty food</h3>
+            <h3 class="box-name">Big Tasty</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -147,14 +184,14 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span class="price">$15.99</span>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn clk">add to cart</a>
         </div>
 
         <div class="box">
             <a href="#" class="fas fa-heart"></a>
             
             <img class="box-img"  src="images/dish-2.png" alt="">
-            <h3 class="box-name">tasty food</h3>
+            <h3 class="box-name">Chicken Tenders</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -162,7 +199,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="price">$15.99</span>
+            <span class="price">$19.99</span>
             <a href="#" class="btn">add to cart</a>
         </div>
 
@@ -170,7 +207,7 @@
             <a href="#" class="fas fa-heart"></a>
            
             <img class="box-img"  src="images/dish-3.png" alt="">
-            <h3 class="box-name">tasty food</h3>
+            <h3 class="box-name">Fried chicken</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -178,7 +215,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="price">$15.99</span>
+            <span class="price">$25.99</span>
             <a href="#" class="btn">add to cart</a>
         </div>
 
@@ -186,7 +223,7 @@
             <a href="#" class="fas fa-heart"></a>
             
             <img class="box-img"  src="images/dish-4.png" alt="">
-            <h3 class="box-name">tasty food</h3>
+            <h3 class="box-name">Pizza</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -194,7 +231,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="price">$15.99</span>
+            <span class="price">$16.99</span>
             <a href="#" class="btn">add to cart</a>
         </div>
 
@@ -210,7 +247,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="price">$15.99</span>
+            <span class="price">$5.99</span>
             <a href="#" class="btn">add to cart</a>
         </div>
 
@@ -226,7 +263,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="price">$15.99</span>
+            <span class="price">$10.99</span>
             <a href="#" class="btn">add to cart</a>
         </div>
 
@@ -630,7 +667,7 @@
        <div class="icons">
           <i class="fas fa-clock"></i>
           <h3>opening hours</h3>
-          <p>07:00am to 10:00pm</p>
+          <p>08:00am to 11:00pm</p>
        </div>
  
        <div class="icons">
